@@ -1,6 +1,6 @@
 ﻿namespace Proyecto_Glacial
 {
-    partial class Form1
+    partial class frm_MenuPrincipal
     {
         /// <summary>
         /// Required designer variable.
