@@ -31,16 +31,16 @@
             this.lbl_Provedores = new System.Windows.Forms.Label();
             this.pnl_Encabezado = new System.Windows.Forms.Panel();
             this.pnl_Menu = new System.Windows.Forms.Panel();
+            this.lbl_Buscar = new System.Windows.Forms.Label();
+            this.lbl_Modificar = new System.Windows.Forms.Label();
+            this.lbl_Eliminar = new System.Windows.Forms.Label();
+            this.lbl_Agregar = new System.Windows.Forms.Label();
             this.pnl_Contenido = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lbl_Agregar = new System.Windows.Forms.Label();
-            this.lbl_Eliminar = new System.Windows.Forms.Label();
-            this.lbl_Modificar = new System.Windows.Forms.Label();
-            this.lbl_Buscar = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn_Buscar = new System.Windows.Forms.Button();
+            this.btn_Modificar = new System.Windows.Forms.Button();
+            this.btn_Eliminar = new System.Windows.Forms.Button();
+            this.btn_Agregar = new System.Windows.Forms.Button();
             this.pnl_Encabezado.SuspendLayout();
             this.pnl_Menu.SuspendLayout();
             this.SuspendLayout();
@@ -65,11 +65,11 @@
             // 
             // pnl_Menu
             // 
-            this.pnl_Menu.Controls.Add(this.button4);
-            this.pnl_Menu.Controls.Add(this.button3);
-            this.pnl_Menu.Controls.Add(this.button2);
-            this.pnl_Menu.Controls.Add(this.button1);
+            this.pnl_Menu.Controls.Add(this.btn_Buscar);
             this.pnl_Menu.Controls.Add(this.lbl_Buscar);
+            this.pnl_Menu.Controls.Add(this.btn_Modificar);
+            this.pnl_Menu.Controls.Add(this.btn_Eliminar);
+            this.pnl_Menu.Controls.Add(this.btn_Agregar);
             this.pnl_Menu.Controls.Add(this.lbl_Modificar);
             this.pnl_Menu.Controls.Add(this.lbl_Eliminar);
             this.pnl_Menu.Controls.Add(this.lbl_Agregar);
@@ -77,6 +77,46 @@
             this.pnl_Menu.Name = "pnl_Menu";
             this.pnl_Menu.Size = new System.Drawing.Size(174, 523);
             this.pnl_Menu.TabIndex = 2;
+            // 
+            // lbl_Buscar
+            // 
+            this.lbl_Buscar.AutoSize = true;
+            this.lbl_Buscar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F);
+            this.lbl_Buscar.Location = new System.Drawing.Point(50, 101);
+            this.lbl_Buscar.Name = "lbl_Buscar";
+            this.lbl_Buscar.Size = new System.Drawing.Size(75, 22);
+            this.lbl_Buscar.TabIndex = 4;
+            this.lbl_Buscar.Text = "Buscar";
+            // 
+            // lbl_Modificar
+            // 
+            this.lbl_Modificar.AutoSize = true;
+            this.lbl_Modificar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F);
+            this.lbl_Modificar.Location = new System.Drawing.Point(37, 472);
+            this.lbl_Modificar.Name = "lbl_Modificar";
+            this.lbl_Modificar.Size = new System.Drawing.Size(95, 22);
+            this.lbl_Modificar.TabIndex = 3;
+            this.lbl_Modificar.Text = "Modificar";
+            // 
+            // lbl_Eliminar
+            // 
+            this.lbl_Eliminar.AutoSize = true;
+            this.lbl_Eliminar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F);
+            this.lbl_Eliminar.Location = new System.Drawing.Point(43, 344);
+            this.lbl_Eliminar.Name = "lbl_Eliminar";
+            this.lbl_Eliminar.Size = new System.Drawing.Size(85, 22);
+            this.lbl_Eliminar.TabIndex = 2;
+            this.lbl_Eliminar.Text = "Eliminar";
+            // 
+            // lbl_Agregar
+            // 
+            this.lbl_Agregar.AutoSize = true;
+            this.lbl_Agregar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F);
+            this.lbl_Agregar.Location = new System.Drawing.Point(44, 216);
+            this.lbl_Agregar.Name = "lbl_Agregar";
+            this.lbl_Agregar.Size = new System.Drawing.Size(86, 22);
+            this.lbl_Agregar.TabIndex = 1;
+            this.lbl_Agregar.Text = "Agregar";
             // 
             // pnl_Contenido
             // 
@@ -92,81 +132,42 @@
             this.panel1.Size = new System.Drawing.Size(872, 34);
             this.panel1.TabIndex = 4;
             // 
-            // lbl_Agregar
+            // btn_Buscar
             // 
-            this.lbl_Agregar.AutoSize = true;
-            this.lbl_Agregar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Agregar.Location = new System.Drawing.Point(25, 96);
-            this.lbl_Agregar.Name = "lbl_Agregar";
-            this.lbl_Agregar.Size = new System.Drawing.Size(124, 32);
-            this.lbl_Agregar.TabIndex = 1;
-            this.lbl_Agregar.Text = "Agregar";
+            this.btn_Buscar.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_Buscar.Image = global::Proyecto_Glacial.Properties.Resources.SearchButtonGray;
+            this.btn_Buscar.Location = new System.Drawing.Point(49, 24);
+            this.btn_Buscar.Name = "btn_Buscar";
+            this.btn_Buscar.Size = new System.Drawing.Size(75, 75);
+            this.btn_Buscar.TabIndex = 5;
+            this.btn_Buscar.UseVisualStyleBackColor = false;
             // 
-            // lbl_Eliminar
+            // btn_Modificar
             // 
-            this.lbl_Eliminar.AutoSize = true;
-            this.lbl_Eliminar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Eliminar.Location = new System.Drawing.Point(25, 223);
-            this.lbl_Eliminar.Name = "lbl_Eliminar";
-            this.lbl_Eliminar.Size = new System.Drawing.Size(122, 32);
-            this.lbl_Eliminar.TabIndex = 2;
-            this.lbl_Eliminar.Text = "Eliminar";
+            this.btn_Modificar.Image = global::Proyecto_Glacial.Properties.Resources.ModifyButtonBlue;
+            this.btn_Modificar.Location = new System.Drawing.Point(47, 396);
+            this.btn_Modificar.Name = "btn_Modificar";
+            this.btn_Modificar.Size = new System.Drawing.Size(75, 75);
+            this.btn_Modificar.TabIndex = 8;
+            this.btn_Modificar.UseVisualStyleBackColor = true;
             // 
-            // lbl_Modificar
+            // btn_Eliminar
             // 
-            this.lbl_Modificar.AutoSize = true;
-            this.lbl_Modificar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Modificar.Location = new System.Drawing.Point(25, 357);
-            this.lbl_Modificar.Name = "lbl_Modificar";
-            this.lbl_Modificar.Size = new System.Drawing.Size(137, 32);
-            this.lbl_Modificar.TabIndex = 3;
-            this.lbl_Modificar.Text = "Modificar";
+            this.btn_Eliminar.Image = global::Proyecto_Glacial.Properties.Resources.DeleteButtonRed;
+            this.btn_Eliminar.Location = new System.Drawing.Point(49, 268);
+            this.btn_Eliminar.Name = "btn_Eliminar";
+            this.btn_Eliminar.Size = new System.Drawing.Size(75, 75);
+            this.btn_Eliminar.TabIndex = 7;
+            this.btn_Eliminar.UseVisualStyleBackColor = true;
             // 
-            // lbl_Buscar
+            // btn_Agregar
             // 
-            this.lbl_Buscar.AutoSize = true;
-            this.lbl_Buscar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Buscar.Location = new System.Drawing.Point(25, 472);
-            this.lbl_Buscar.Name = "lbl_Buscar";
-            this.lbl_Buscar.Size = new System.Drawing.Size(109, 32);
-            this.lbl_Buscar.TabIndex = 4;
-            this.lbl_Buscar.Text = "Buscar";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(48, 39);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(48, 173);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(48, 306);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(48, 419);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_Agregar.Image = global::Proyecto_Glacial.Properties.Resources.AddButtonBlue;
+            this.btn_Agregar.Location = new System.Drawing.Point(49, 140);
+            this.btn_Agregar.Name = "btn_Agregar";
+            this.btn_Agregar.Size = new System.Drawing.Size(75, 75);
+            this.btn_Agregar.TabIndex = 6;
+            this.btn_Agregar.UseVisualStyleBackColor = true;
             // 
             // frm_Proveedores
             // 
@@ -194,10 +195,10 @@
         private System.Windows.Forms.Panel pnl_Menu;        
         private System.Windows.Forms.Panel pnl_Contenido;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_Buscar;
+        private System.Windows.Forms.Button btn_Modificar;
+        private System.Windows.Forms.Button btn_Eliminar;
+        private System.Windows.Forms.Button btn_Agregar;
         private System.Windows.Forms.Label lbl_Buscar;
         private System.Windows.Forms.Label lbl_Modificar;
         private System.Windows.Forms.Label lbl_Eliminar;
