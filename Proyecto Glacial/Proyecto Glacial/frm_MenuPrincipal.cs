@@ -16,5 +16,12 @@ namespace Proyecto_Glacial
         {
             InitializeComponent();
         }
+
+        private void btn_Clientes_Click(object sender, EventArgs e)
+        {
+            Form FormularioClientes = new frm_ClientesMenu();
+            FormularioClientes.Show();
+
+        }
     }
 }

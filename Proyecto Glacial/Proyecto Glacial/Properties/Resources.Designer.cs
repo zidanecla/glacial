@@ -73,9 +73,39 @@ namespace Proyecto_Glacial.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AddIconBlue_2_ {
+            get {
+                object obj = ResourceManager.GetObject("AddIconBlue(2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap clipboard_search_symbol {
+            get {
+                object obj = ResourceManager.GetObject("clipboard-search-symbol", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DeleteButtonRed {
             get {
                 object obj = ResourceManager.GetObject("DeleteButtonRed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DeleteButtonRed_2_ {
+            get {
+                object obj = ResourceManager.GetObject("DeleteButtonRed(2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +123,29 @@ namespace Proyecto_Glacial.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap SearchButtonAllGray {
+            get {
+                object obj = ResourceManager.GetObject("SearchButtonAllGray", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap SearchButtonGray {
             get {
                 object obj = ResourceManager.GetObject("SearchButtonGray", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SearchButtonGray_02_ {
+            get {
+                object obj = ResourceManager.GetObject("SearchButtonGray(02)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
