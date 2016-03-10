@@ -33,8 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,16 +51,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutoClosingMessageBox.cs" />
     <Compile Include="frm_MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_MenuPrincipal.Designer.cs">
       <DependentUpon>frm_MenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Proveedores.cs">
+    <Compile Include="glacial_almacenDataSet.cs">
+      <DependentUpon>glacial_almacenDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="glacial_almacenDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>glacial_almacenDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedores\frm_ProveedorAgregar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Proveedores.Designer.cs">
+    <Compile Include="Proveedores\frm_ProveedorAgregar.Designer.cs">
+      <DependentUpon>frm_ProveedorAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedores\frm_ProveedorBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedores\frm_ProveedorBuscar.Designer.cs">
+      <DependentUpon>frm_ProveedorBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedores\frm_Proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedores\frm_Proveedores.Designer.cs">
       <DependentUpon>frm_Proveedores.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -63,7 +89,13 @@
     <EmbeddedResource Include="frm_MenuPrincipal.resx">
       <DependentUpon>frm_MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Proveedores.resx">
+    <EmbeddedResource Include="Proveedores\frm_ProveedorAgregar.resx">
+      <DependentUpon>frm_ProveedorAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores\frm_ProveedorBuscar.resx">
+      <DependentUpon>frm_ProveedorBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores\frm_Proveedores.resx">
       <DependentUpon>frm_Proveedores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -76,6 +108,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="glacial_almacenDataSet.xsc">
+      <DependentUpon>glacial_almacenDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="glacial_almacenDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>glacial_almacenDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="glacial_almacenDataSet.xss">
+      <DependentUpon>glacial_almacenDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -87,7 +130,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\SearchButtonGray.png" />
