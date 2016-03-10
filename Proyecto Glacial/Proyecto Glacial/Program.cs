@@ -16,7 +16,7 @@ namespace Proyecto_Glacial
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_Proveedores());
+            Application.Run(new frm_MenuPrincipal());
         }
     }
 }
