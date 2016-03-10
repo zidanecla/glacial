@@ -51,20 +51,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AutoClosingMessageBox.cs" />
+    <Compile Include="Clientes\frm_ClientesAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\frm_ClientesAgregar.Designer.cs">
+      <DependentUpon>frm_ClientesAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\frm_ClientesBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\frm_ClientesBuscar.Designer.cs">
+      <DependentUpon>frm_ClientesBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\frm_ClientesMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\frm_ClientesMenu.Designer.cs">
+      <DependentUpon>frm_ClientesMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\frm_ClientesModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\frm_ClientesModificar.Designer.cs">
+      <DependentUpon>frm_ClientesModificar.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_MenuPrincipal.Designer.cs">
       <DependentUpon>frm_MenuPrincipal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="glacial_almacenDataSet.cs">
-      <DependentUpon>glacial_almacenDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="glacial_almacenDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>glacial_almacenDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Proveedores\frm_ProveedorAgregar.cs">
       <SubType>Form</SubType>
@@ -86,6 +101,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Clientes\frm_ClientesAgregar.resx">
+      <DependentUpon>frm_ClientesAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\frm_ClientesBuscar.resx">
+      <DependentUpon>frm_ClientesBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\frm_ClientesMenu.resx">
+      <DependentUpon>frm_ClientesMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\frm_ClientesModificar.resx">
+      <DependentUpon>frm_ClientesModificar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_MenuPrincipal.resx">
       <DependentUpon>frm_MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,17 +135,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="glacial_almacenDataSet.xsc">
-      <DependentUpon>glacial_almacenDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="glacial_almacenDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>glacial_almacenDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="glacial_almacenDataSet.xss">
-      <DependentUpon>glacial_almacenDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -145,6 +161,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ModifyButtonBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddIconBlue%282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeleteButtonRed%282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard-search-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchButtonGray%2802%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchButtonAllGray.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
