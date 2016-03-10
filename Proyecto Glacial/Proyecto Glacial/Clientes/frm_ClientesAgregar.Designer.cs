@@ -197,7 +197,7 @@
             // 
             // btn_AgregarCliente
             // 
-            this.btn_AgregarCliente.Image = global::Proyecto_Glacial.Properties.Resources.AddIconBlue_2_;
+            this.btn_AgregarCliente.Image = global::Proyecto_Glacial.Properties.Resources.AddIconBlue;
             this.btn_AgregarCliente.Location = new System.Drawing.Point(491, 211);
             this.btn_AgregarCliente.Name = "btn_AgregarCliente";
             this.btn_AgregarCliente.Size = new System.Drawing.Size(80, 80);
