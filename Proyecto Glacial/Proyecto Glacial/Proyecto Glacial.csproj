@@ -81,14 +81,6 @@
     <Compile Include="frm_MenuPrincipal.Designer.cs">
       <DependentUpon>frm_MenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="glacial_almacenDataSet.cs">
-      <DependentUpon>glacial_almacenDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="glacial_almacenDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>glacial_almacenDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Proveedores\frm_ProveedorAgregar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,28 +135,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="glacial_almacenDataSet.xsc">
-      <DependentUpon>glacial_almacenDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="glacial_almacenDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>glacial_almacenDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="glacial_almacenDataSet.xss">
-      <DependentUpon>glacial_almacenDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="glacial_almacenDataSet.xsc">
-      <DependentUpon>glacial_almacenDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="glacial_almacenDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>glacial_almacenDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="glacial_almacenDataSet.xss">
-      <DependentUpon>glacial_almacenDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
